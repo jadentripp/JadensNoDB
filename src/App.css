@@ -1,38 +1,66 @@
-.App {
-  text-align: center;
+body{
+  margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-around;
+  background-color: aqua;
+  padding-bottom: 5vh;
 }
 
-.App-link {
-  color: #61dafb;
+.playlistTitle{
+  display: flex;
+  flex-direction: row;
+  
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.title {
+  border: black solid 1px;
+}
+
+.songList{
+  display: flex;
+  flex-direction: row;
+  width: 60%;
+  height: 300px;
+  line-height: 3vh;
+  list-style: none;
+  flex-wrap: wrap;
+}
+.song{
+ padding: 10px;
+ border: solid 1px;
+ width: 250px;
+ height: 250px;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ margin: 5px;
+}
+.channelOrange{
+ display: flex;
+ flex-direction: column;
+ justify-self: flex-start;
+ width: 150px;
+}
+
+.body{
+  display: flex;
+  justify-content:space-evenly;
+}
+.playlist-container{
+  width: ;
+}
+.playlist{
+ display: flex;
+ flex-direction: column;
+ align-content: center;
+}
+
+.playlist-item{
+display: flex;
+width: 300px;
+border: black solid 1px;
+padding-right: 100px;
 }
