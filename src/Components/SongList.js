@@ -21,7 +21,8 @@ export default class SongList extends Component {
                     {song.title} 
                     <br></br>
                     By {song.artist}
-                    <button onClick={()=>this.props.addSong(song.title, song.artist)}>addSong</button>
+                    <button onClick={()=>this.props.addSong(song.title, song.artist)}>Add Song To Playlist</button>
+                    <button onClick={()=>this.props.playSong(song.path)}>Play Song</button>
                     </li>)}       
                 </ul>    
             </div>

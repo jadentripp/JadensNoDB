@@ -4,7 +4,7 @@ import PlaylistHeader from './PlaylistHeader'
 export default function Header (){
     return (
         <div className="header">
-            <div className="Title">    
+            <div className="title">    
                 <h1>Jaden's Playlist Maker</h1>
             </div>
           <div className="playlistHeader">    

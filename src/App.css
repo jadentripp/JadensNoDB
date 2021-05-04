@@ -1,14 +1,17 @@
 body{
   margin: 0;
+  background-color: #544B3D;
 }
 
 .header{
   display: flex;
   justify-content: space-around;
-  background-color: aqua;
+  background-color:#4E6E58;
   padding-bottom: 5vh;
 }
-
+.playlistHeader{
+  color: #CEF3E6;
+}
 .playlistTitle{
   display: flex;
   flex-direction: row;
@@ -16,7 +19,7 @@ body{
 }
 
 .title {
-  border: black solid 1px;
+  color: #CEF3E6;
 }
 
 .songList{
@@ -35,13 +38,11 @@ body{
  height: 250px;
  display: flex;
  flex-direction: column;
- justify-content: center;
+ justify-content: space-between;
  margin: 5px;
+ background-color: #A6ECE0;
 }
 .channelOrange{
- display: flex;
- flex-direction: column;
- justify-self: flex-start;
  width: 150px;
 }
 
@@ -49,20 +50,24 @@ body{
   display: flex;
   justify-content:space-evenly;
 }
+
 .playlist-container{
- padding-right: 100px;
+ padding-right: 17vh;
 }
+
 .playlist{
  display: flex;
  flex-direction: column;
  align-content: center;
+ align-content: space-between;
 }
 
 .playlist-item{
 display: flex;
 width: 300px;
 border: black solid 1px;
-display: flex;
-justify-content: center;
+justify-content: space-between;
 padding-right: 100px;
+background-color: #7ADFBB;
+height: 50px;
 }
