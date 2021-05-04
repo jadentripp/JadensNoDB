@@ -9,7 +9,7 @@ app.use(express.json())
 //top level middleware
 app.get('/api/songs', songCtrl.getSongs)
 app.post('/api/songs', songCtrl.addSong)
-app.delete('api/songs:id', songCtrl.deleteSong)
-app.put('api/songs:id', songCtrl.editSong)
+app.delete('/api/songs/:id', songCtrl.deleteSong)
+app.put('/api/songs/:id', songCtrl.editSong)
 
 app.listen(PORT, ()=>console.log('server is running'))

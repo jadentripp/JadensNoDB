@@ -20,14 +20,31 @@ addSong = (title, artist)=> {
     .then(res=>this.setState({playlist: res.data}))
     .catch(err=> console.log(err))
 }
-
+deleteSong = (id) => {
+  axios.delete(`/api/songs/${id}`)
+  .then((res)=>{
+    this.setState({playlist: res.data})
+  })
+  .catch((err)=>{
+    console.log(err)
+  })
+}
+editSong = (id, title)=>{
+  axios.put(`/api/songs/${id}`, {title})
+  .then(res=> {
+    this.setState({playlist: res.data})
+  })
+  .catch(err=>{
+    console.log(err)
+  })
+}
   render(){
     return (
       <div>
         <Header /> 
         <div className="body">
         <Songlist songs={this.state.songLibrary} addSong={this.addSong}/>
-        <Playlist playlistArr ={this.state.playlist}/>
+        <Playlist playlistArr ={this.state.playlist} deleteSong={this.deleteSong} editSong={this.editSong}/>
         </div>
       </div>
     )

@@ -50,7 +50,7 @@ body{
   justify-content:space-evenly;
 }
 .playlist-container{
-  width: ;
+ padding-right: 100px;
 }
 .playlist{
  display: flex;
@@ -62,5 +62,7 @@ body{
 display: flex;
 width: 300px;
 border: black solid 1px;
+display: flex;
+justify-content: center;
 padding-right: 100px;
 }

@@ -28,12 +28,13 @@ module.exports = {
   },
   editSong:(req, res) => {
      const {id} = req.params
+     const {title} = req.body
      const index = songs.findIndex((e) =>{
      return e.id = id
    })
    songs[index] = {
      ...songs[index],
-     title,
+     title: title || songs[index].title
    }
    res.status(200).send(songs)
   }
